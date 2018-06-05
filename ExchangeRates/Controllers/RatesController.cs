@@ -23,7 +23,7 @@ namespace ExchangeRates.Controllers
     {
         private CurrencyContext db = new CurrencyContext();
 
-        // GET: api/Rates/2018-05-25/2018-05-31
+        // GET: api/Rates/25-05-2018/31-05-2018
 
         public IHttpActionResult GetRates(int id, string dtStart, string dtEnd)
         {

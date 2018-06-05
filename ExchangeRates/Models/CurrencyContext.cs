@@ -14,7 +14,7 @@ namespace ExchangeRates.Models
             Database.SetInitializer(new DbInit());
         }
     }
-    class DbInit : DropCreateDatabaseAlways<CurrencyContext>
+    class DbInit : DropCreateDatabaseIfModelChanges<CurrencyContext>
     {
         protected override void Seed(CurrencyContext db)
         {
